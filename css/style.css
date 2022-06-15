@@ -1,0 +1,26 @@
+.viewer {
+    visibility: hidden;
+    position: fixed;
+    top: 50px;
+    left: 10px;
+    width: calc(100vw - 20px);
+    height: calc(100vh - 100px);
+    border: 1px solid #000;
+}
+
+.viewer-control {
+    text-align: right;
+    background-color: #f6f6f6;
+    height: 40px;
+}
+
+#container {
+    width: 100%;
+    height: calc(100% - 40px);
+}
+
+.thumbnail {
+    border: 1px solid #000;
+    width: 200px;
+    height: 100%;
+}

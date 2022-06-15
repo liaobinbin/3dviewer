@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3d Viewer Demo</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+
+
+    <input style="display: none;" type="file" name="file" id="file" onchange="getFile()">
+    <button onclick="selectFile()">上传</button>
+
+    
+    <div class="viewer">
+        <div class="viewer-control">
+            <button onclick="off()">关闭</button>
+        </div>
+        
+        <div id="container"></div>
+    </div>
+
+    <script src="./js/three.js"></script>
+    <script src="./js/STLLoader.js"></script>
+    <script src="./js/OrbitControls.js"></script>
+    <script src="./js//stats.min.js"></script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
